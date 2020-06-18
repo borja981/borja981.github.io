@@ -33,7 +33,7 @@
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /><!-- Masthead Heading-->
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/nodejslogo.png" alt="" /><!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">EasyNote</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
@@ -42,7 +42,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Desarrollo de aplicación de notas realizada con node.js </p>
+                <p class="masthead-subheading font-weight-light mb-0">Desarrollo e implentación de una aplicación de notas realizada con node.js, sincronizada con Mongo Atlas y desplegada en un entorno de producción con Heroku </p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -91,7 +91,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/githublogo.png" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
@@ -100,7 +100,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/herokulogo.png" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
@@ -109,7 +109,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/infologo.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-4 ml-auto"><p class="lead">El objetivo de esta web es documentar el desarrallo de una aplicación de notas creada con node.js para el proyecto de fin de Ciclo de DAW del IES Fernando Wirtz Suárez</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead">En el siguiente enlace puedes descargar el código y a través de está web consultar toda la información necesaria para su implentación</p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">En el siguiente enlace puedes descargar el código y a través de está web consultar toda la información necesaria para su implementación</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -250,6 +250,33 @@
                                 </br>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/compassListDb.png" alt="" />
                                     <p class="mb-5">A continuación podemos ver la lista con las bases de datos disponibles. También nos ofrece la posibilidad de crear una nueva base de datos</p>
+                                    
+                                    <hr></br>                                   
+                                    <h2>Atlas - Cloud Mongodb</h2> 
+                                    <p class="mb-5">Una de las peculiaridades de mongo es su conexión con Atlas, que provee a nuestra base de datos de una ifrasctructura cloud: <a href="https://www.mongodb.com/cloud/atlas/register">Atlas.</a></p>
+                                </br>  
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/atlas.png" alt="" />
+                                    <p class="mb-5"></p>Tras el registro previo y seleccionado un servidor lo primero sera observar el panel de control y ver todas la opciones que ofrece, nos centraremos únicamente en las más importantes</p>
+                                </br>                          
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cluster.png" alt="" />
+                                    <p class="mb-5">En la imagen se puede ver la creación de un cluster que ofrece alta disponivilidad a la base de datos con tres nodos disponibles. Esta opción es configurable y sobre esta cluster vamos a enlazar nuestra base de datos local.</p>
+                                </br> 
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/userdb.png" alt="" />
+                                    <p class="mb-5">El siguiente paso el la creación de un usuario de aplicación para la base de datos el cual usaremos más adelante para conectar nuestra aplicación. Se le otorgan permisos de administrador de BBDD.</p>
+                                </br> 
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/networkdb.png" alt="" />
+                                    <p class="mb-5">En la pestaña network se indica el acceso a todas la direcciones añadiendo la ip 0.0.0.0/0 con status activo</p>
+                                </br> 
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/connectapp.png" alt="" />
+                                    <p class="mb-5">Ahora volvemos a la pestaña cluster y realizamos una conexión con nuestra base de datos local, seleccionando la opción de conectar a Compass </p>
+                                </br> 
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/driverdb.png" alt="" />
+                                <p class="mb-5">Se copia el conector generado el cual usaremos para realizar la conexión con nuestro entorno local</p>
+                                </br> 
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/connectok.png" alt="" />
+                                <p class="mb-5">De vuelta a Compass, se cre una nueva conexión pegando el código de conexión. Una vez realizado se puede observar los 3 nodos del cluster ahora disponibles en el menú de la izquierda.</p>
+
+                                <p class="mb-5">De esta manera ya tenemos conectada nuestra base de datos en local a Mongo Atlas, por lo que cualquier cambio que hagamos en la base de datos de nuestro cluster lo veremos sincronizado en local y viceversa.</p>
 
 
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
@@ -272,7 +299,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Entorno de desarrallo</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -280,22 +307,28 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/node.png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">El entorno de desarrollo que he utilizado está compuesto por la siguientes herramientas: 
+                                        
+                                            <p>Ubuntu 18.04</p>
+                                            <p>Visual Studio Code</p>
+                                            <p>Mongodb</p>
+                                            <p>Mongo Compass</p>
+                                            <p>node js</p>
+                                            <p>Git</p>
+                                        
+                                    </p>
+
+									<p class="mb-5">Además también se han utilizado otras herramientas como es el caso del cloud de Mongo (Atlas), el repositorio web de GitHub y el posterior despliegue en producción con Heroku.</p>
+                                </br>
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/versions.png" alt="" />
+                                    <p class="mb-5">Lo primero es instalar el gestor de paquetes de node, el npm, el cual nos permiste descargar las dependencias necesarias para nuestra aplicación. </p>
+                                    
+                                    <p class="mb-5"></p>
+
+                                    <p class="mb-5"></p>
+
+                                    <p class="mb-5"></p>
 									
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
-									<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -324,7 +357,21 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/easy.png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">Una vez instalados los paquetes necesarios para que nuestra aplicación pueda funcionar se procedera a crear un nuevo proyecto en Visual</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/versions.png" alt="" />
+                                    <p class="mb-5">Se comprueban con el comando --version que los paquetes han sido instalados con éxito.</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/raizrepo.png" alt="" />
+                                    <p class="mb-5">En mi caso he creado una carpeta en la raíz de directorio git con el nombre del proyecto NOTE-APP.</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dirapp.png" alt="" />
+                                    <p class="mb-5">Una vez dentro de visual importamos el proyecto que contendría la siguiente estructura completa, eso si, una vez finalizado.</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dependencias.png" alt="" />
+                                    <p class="mb-5">El package.json es un fichero autogenerado en el cual irán aparenciendo las dependencias que vayamos instalando a lo largo del desarrollo. Siempre que instalemos una dependencia hay que asegurarse de que estamos situado en la consola dentro de la carpeta del proyecto</p>
+
+
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -345,15 +392,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">GitHub</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/githublogo.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <p class="mb-5"></p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dependencias.png" alt="" />
+
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
