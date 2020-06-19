@@ -133,7 +133,7 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/"><i class="fas fa-download mr-2"></i>GitHub</a>
+                    <a class="btn btn-xl btn-outline-light" href="https://github.com/borjaDB/Aplicacion-de-notas"><i class="fas fa-download mr-2"></i>GitHub</a>
                 </div>
             </div>
         </section>
@@ -424,13 +424,30 @@
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/githublogo.png" alt="" /><!-- Portfolio Modal - Text-->
                                    
-                                    <p class="mb-5">Github es el repositorio que almacena el código de nuestra aplicación y gestiona los cambios realizados por uno o varios usuarios. En mi caso, trabajo directamente sobre la rama master</p>
+                                    <p class="mb-5">Github es el repositorio que almacena el código de nuestra aplicación y gestiona los cambios realizados por uno o varios usuarios. En mi caso, trabajo directamente sobre la rama master.</p>
+                                   
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gitportal.png" alt="" />
+                                    <p class="mb-5">Lo primero es crear un repositorio en la página de git. Una vez creado el proyecto podemos descargar la url que necesitamos para enlazar git a nuestro proyecto local.</p>
+                               
+                                
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gitadd.png" alt="" />
+                                    <p class="mb-5">Para hacer un commit abrimos el terminal desde la raiz de proyecto y añadimos el comando add . </p>
+
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gitcommit.png" alt="" />
+                                    <p class="mb-5">Lo siguiente es hacer un el commit el cual nos indica los cambios realizados.</p>
+
+                                 </br>
+                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gitpush.png" alt="" />
+                                     <p class="mb-5">Por último hay que hacer push. Esto hará que nuestro código fuente en local se actualicé con el repositirio externo.</p>
+                                                                     
                                     <p class="mb-5"></p>
-                                    <p class="mb-5"></p>
-                                    <p class="mb-5"></p>
+                                    
                                     <p class="mb-5"></p>
                                 </br>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dependencias.png" alt="" />
+                                    
 
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -452,15 +469,31 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Despligue en Heroku</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/herokulogo.png" alt="" /><!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Heroku ofrece un entorno para poder desplegar nuestra aplicación. En mi caso, enlazando la aplicación desde el repositorio de github. Al tener la base de datos en cloud la aplicación será totalmente funcional.</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/herokuportal.png" alt="" />
+                                    <p class="mb-5">Desde el panel principal se puede observar el script configurado para arrancar la app: npm start que está definido en el fichero package.json de la aplicación</p>
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/herokugit.png" alt="" />
+                                    <p class="mb-5">En la pestaña de recursos vemos que nuestra aplicación está conectada con github. Es decir, cualquier cambio se verá refleado en Heroku previo despliegue.</p>
+
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/herokuvar.png" alt="" />
+                                    <p class="mb-5">Es necesario configurar la variable de entorno definida en en el fichero de base de datos de la app. Esa variable incluye los parámetros de conexión contra la base de datos Atlas, que a su vez está sincronizada con nuestra base de datos local.</p>
+
+                                </br>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/appdbjs.png" alt="" />                                    
+                                    <p class="mb-5">En este caso, vemos que si esta variable no es null, hará la conexión por Atlas</p>
+                                    <p class="mb-5">Con esto, ya tendríamos nuestra aplicación totalmente funcional desplegada en heroku y que se accede a través de la url: <a href="https://app-notes-borjadb.herokuapp.com/">https://app-notes-borjadb.herokuapp.com/</a></p>
+                                    
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -481,15 +514,17 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Información</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <!-- Portfolio Modal - Image <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" /> Portfolio Modal - Text-->
+                                    <p class="mb-5">Url git: <a href="">https://github.com/borjaDB/Aplicacion-de-notas</a></p>
+                                    <p class="mb-5">Url Heroku: <a href="">https://app-notes-borjadb.herokuapp.com/</a></p>
+                                    <p class="mb-5">La foto final del desarrollo es una aplicación de notas donde los usuarios pueden crear editar y eliminar sus notas. Esta aplicación posee una base de datos cloud con Mongo Atlas y está desplegada en un entorno de producción con Heroku.</p>
                                     <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
